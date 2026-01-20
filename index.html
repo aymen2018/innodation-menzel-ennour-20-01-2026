@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محتاج مساعدة / أقدر أساعد - استجابة الفيضان</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                استجابة<span>الفيضان</span>
+            </a>
+            <a href="dashboard.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">
+                عرض لوحة التحكم المباشرة
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container animate-fade-in">
+            <h1 class="hero-title">الاستجابة للطوارئ<br>أصبحت أسهل</h1>
+            <p class="hero-subtitle">
+                نربط المتضررين من الفيضانات بالمتطوعين المحليين في الوقت الفعلي.
+                اطلب المساعدة عند الحاجة، أو اعرض المساعدة إن استطعت.
+            </p>
+
+            <div class="action-grid" style="max-width: 800px; margin: 0 auto;">
+                <!-- I Need Help -->
+                <div class="card" style="text-align: right; border-top: 4px solid var(--urgent-orange);">
+                    <h2 style="color: var(--urgent-orange); margin-bottom: 12px;">محتاج مساعدة</h2>
+                    <p style="margin-bottom: 24px; color: var(--neutral-gray);">
+                        هل أنت محاصر؟ هل تحتاج إلى طعام أو ماء أو إجلاء؟ أخبرنا بموقعك واحتياجاتك فوراً.
+                    </p>
+                    <a href="request_help.html" class="btn btn-urgent" style="width: 100%;">
+                        طلب مساعدة عاجلة
+                    </a>
+                </div>
+
+                <!-- I Can Help -->
+                <div class="card" style="text-align: right; border-top: 4px solid var(--primary-blue);">
+                    <h2 style="color: var(--primary-blue); margin-bottom: 12px;">أقدر أساعد</h2>
+                    <p style="margin-bottom: 24px; color: var(--neutral-gray);">
+                        هل تملك قارباً أو شاحنة أو مؤناً؟ سجل كمتطوع لمساعدة جيرانك.
+                    </p>
+                    <a href="offer_help.html" class="btn btn-primary" style="width: 100%;">
+                        تسجيل كمتطوع
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Info Section -->
+    <section class="container" style="margin-bottom: 80px;">
+        <div class="card" style="background: linear-gradient(to left, #EFF6FF, #FFFFFF);">
+            <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h3>كيف يعمل الموقع؟</h3>
+                    <ul style="margin-top: 16px; padding-right: 20px; color: var(--neutral-dark);">
+                        <li style="margin-bottom: 8px;">قم بتقديم طلب مع تحديد موقعك ومستوى الاستعجال.</li>
+                        <li style="margin-bottom: 8px;">يرى المتطوعون الطلبات في الوقت الفعلي على لوحة التحكم.</li>
+                        <li style="margin-bottom: 8px;">يتم التواصل مباشرة عبر الهاتف لتنسيق المساعدة.</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; flex: 1;">
+                    <a href="dashboard.html" style="color: var(--primary-blue); font-weight: 600;">
+                        شاهد الطلبات النشطة في منطقتك &larr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px 0; color: var(--neutral-gray);">
+        <p>&copy; 2026 مبادرة استجابة الفيضان. صنعت من أجل الإنسانية.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

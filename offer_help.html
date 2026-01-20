@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطوع للمساعدة - استجابة الفيضان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                استجابة<span>الفيضان</span>
+            </a>
+            <a href="dashboard.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">
+                عرض لوحة التحكم
+            </a>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 600px; margin-top: 40px; margin-bottom: 60px;">
+        <div class="card animate-fade-in">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <h2 style="color: var(--primary-blue);">تسجيل كمتطوع</h2>
+                <p style="color: var(--neutral-gray);">شكراً لمساعدتك. أخبرنا عما يمكنك تقديمه.</p>
+            </div>
+
+            <form id="offerForm">
+                <input type="hidden" name="type" value="offer">
+
+                <div class="form-group">
+                    <label class="form-label" for="name">اسمك / اسم الجهة</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="سارة خالد">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone" class="form-input ltr" required placeholder="555-0123"
+                        style="text-align: right;">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="location">موقع تمركزك</label>
+                    <input type="text" id="location" name="location" class="form-input" required
+                        placeholder="مركز الإيواء التابع للبلدية">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="category">نوع المساعدة المقدمة</label>
+                    <select id="category" name="category" class="form-select" required>
+                        <option value="Transport">نقل (قارب/شاحنة)</option>
+                        <option value="FoodWater">توزيع طعام وماء</option>
+                        <option value="Shelter">توفير مأوى</option>
+                        <option value="Medical">إسعافات أولية / طبي</option>
+                        <option value="Labor">جهد بدني / تنظيف</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="description">وصف العرض</label>
+                    <textarea id="description" name="description" class="form-textarea" rows="4"
+                        placeholder="مثال: أملك سيارة دفع رباعي ومعدات إنقاذ..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">تسجيل العرض</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
